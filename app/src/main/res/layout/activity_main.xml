@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -25,7 +26,7 @@
                 android:hint="Team 1"
                 android:imeOptions="actionDone"
                 android:inputType="text"
-                android:background="#d117ca"
+                android:background="#C62828"
                 android:textColor="#FFFFFF" />
 
             <TextView
@@ -35,8 +36,8 @@
                 android:textSize="26sp"
                 android:text="Score:"
                 android:gravity="center"
-                android:background="#e7ef07"
-                android:textColor="#0e0e0f"/>
+                android:background="#424242"
+                android:textColor="#FFFFFF"/>
 
             <TextView
                 android:id="@+id/points"
@@ -45,23 +46,20 @@
                 android:padding="20dp"
                 android:textSize="50sp"
                 android:gravity="center"
-                android:background="#b3c1d1"
+                android:background="#F71989"
                 android:textColor="#FFFFFF"/>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="+1 Point"
-                android:onClick="click1"
-                android:background="#4a92db"/>
-
+                android:onClick="click1" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="-1 Point"
-                android:onClick="click2"
-                android:background="#dbb74a"/>
+                android:onClick="click2" />
         </LinearLayout>
 
         <LinearLayout
@@ -79,11 +77,49 @@
                 android:hint="Team 2"
                 android:imeOptions="actionDone"
                 android:inputType="text"
-                android:background="#fc071b"
+                android:background="#6789C0"
                 android:textColor="#FFFFFF" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="20dp"
-                android:textSize=
+                android:textSize="26sp"
+                android:text="Score:"
+                android:gravity="center"
+                android:background="#F5F5F5"
+                android:textColor="#424242"/>
+
+            <TextView
+                android:id="@+id/goals"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:textSize="50sp"
+                android:gravity="center"
+                android:background="#81C784"
+                android:textColor="#FFFFFF"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="+1 Point"
+                android:onClick="touch1" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-1 Point"
+                android:onClick="touch2" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Game Over"
+        android:onClick="reset"
+        />
+</LinearLayout>
